@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-practice-1-april-2024</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+<p>Welcome to CodeX!</p>
+
+
+<h2>
+  Numbers
+</h2>
+
+<p>
+  Numbers are stored in variables with a single letter, but not always.
+</p>
+<h2></h2>
+<script>
+  // EXAMPLES:
+  let x, y, z, i, j, k, a, b, c;
+  
+  // These numbers are integers (whole numbers)
+  i = 1;
+  j = 2;
+  k = 100;
+  d = 12;
+  e = 21;
+  f = 44;
+
+  
+  document.write("<br>");
+  document.write(`i plus j plus k is ${i+j+k}`);
+  document.write("<br>");
+
+
+  // These numbers are floats (fractions or decimals)
+  // Doing math on floats sometimes results in rounding errors.
+  x = 1.5;
+  y = 3.4;
+  z = 100.12;
+  
+  document.write("<br>");
+  document.write(`x plus y plus z is ${x+y+z}`);
+  document.write("<br>");
+  // TODO: do more arithmatic in JavaScript.
+  
+  document.write
+  // TODO: Use `template literals` to embed variables in strings.
+  document.write(`d plus e plus f is ${d+e+f}`);
+  document.write("<br>");
+  document.write(`f remainder e plus d is ${f%e+d}`);
+  document.write("<br>");
+  // TODO: Make 3 more variables
+  s = 5;
+  t = 10;
+  u = 11;
+
+  
+  // TODO: Make at least 5 more document.write statements.
+  document.write(`s plus t plus u is ${s+t+u}`);
+  document.write("<br>");
+  document.write(`s remainder t plus u is ${s%t+u}`);
+  document.write("<br>");
+  document.write(`Number after 4: ${s}`);
+  document.write("<br>");
+  document.write(`${t}, 9, 8, 7, 6...`);
+  document.write("<br>");
+  document.write(`5 plus 10 = ${s + t}`);
+  document.write("<br>");
+s
+</script>
+
+<h2>
+  Strings
+</h2>
+<p>
+  Strings are used to store one or more characters in the alphabet.
+</p>
+
+<script>
+  // EXAMPLES:
+  
+  let str1 = "Hello";
+  let str2 = "World";
+  let str3 = "!";
+  let str7 = "Jack Burton";
+  let str8 = "Lo Pan";
+  let str9 = "Egg Shen";
+  // Strings can be concatinated together with a + operator.
+  document.write(str1 + " " + str2 + " " + str3);
+  document.write("<br>");
+  document.write("<br>");
+  document.write(`${str7} and ${str8} and ${str9}`);
+  document.write("<br>");
+  let planet = str2;
+
+  // They can be embedded in a template literal, too.
+  document.write(`${str1} ${planet}${str3}`);
+  document.write("<br>");
+  planet = "Mars";
+  document.write(`${str1} ${planet}${str3}`);
+  document.write("<br>");
+  document.write("<br>");
+  
+  // TODO: make and assign more strings and combine them together.
+  // TODO: assign values to str4, str5 and str6
+  let str4 = "Venus";
+  let str5 = 1+2;
+  let str6 = 2*3;
+  // TODO: declare more variables and assign them with strings
+  let str10 = "Nakatomi Plaza";
+  let str11 = "Nick Rivers";
+  movie = "Big Trouble in Little China";
+  // TODO: combine them in at least 5 different document.write statements. 
+  document.write(str10 + " and " + str11);
+  document.write("<br>");
+  document.write(str4 + str5);
+  document.write("<br>");
+  document.write(`${str5} and ${str6} equals 9!`);
+  document.write("<br>");
+  document.write(`${str7} and ${str8} and ${str9} in ${movie}!`);
+  document.write("<br>");
+  document.write(`${str10} in Die Hard`);
+  document.write("<br>");
+  document.write(`${str11} in Top Secret`);
+  document.write();
+</script>
+
+<!-- a button with event handler-->
+<script>
+  function bye() {
+    alert("ciao!");
+  }
+  </script>
+<div>
+  <button onclick="bye()">Ciao!</button>  
+</div>
+
+
+</body>
+</html>

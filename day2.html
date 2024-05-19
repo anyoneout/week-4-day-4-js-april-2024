@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Hello World!</h1>
+<p>Welcome to CodeX!</p>
+
+<h2>Variables and inputs</h2>
+
+<p>Inputs are data that are passed in from the outside.</p>
+
+<p>
+  Open this 
+  <a target="_blank" href="?yourName=Jake&hobby=Karate"> example link </a> in a new window in Glitch.
+</p>
+
+<h3>
+  Output:
+</h3>
+
+<script>
+  // EXAMPLES:
+  let params = new URLSearchParams(document.location.search);
+  let yourName = params.get("yourName");
+  let hobby = params.get("hobby");
+  let yourPetsName = params.get("yourPetsName");
+  let yourJob = params.get("yourJob");
+  document.write(`Hi ${yourName}, do you like ${hobby}?`);
+</script>
+
+<p>
+  Open this 
+  <a target="_blank" href="?yourName=Ami&yourJob=Developer"> example link </a> in a new window in Glitch.
+</p>
+
+<script>
+  // TODO: Try to access the search params for the link:
+  //       yourName=Ami&yourJob=Developer
+  //       follow the above example for reference
+  document.write(`Hi ${yourName}, do you like ${yourJob}?`);
+
+
+</script>
+
+<p>
+  Open this 
+  <!-- TODO: Try with your own params  -->
+  <a target="_blank" href="?yourName=Chris&yourPetsName=Swedgin"> example link </a> in a new window in Glitch.
+</p>
+
+<script>
+  // TODO: Try to access the search params for your link above:
+  //       
+  //       follow the above example for reference
+  document.write(`Hi ${yourName}, do you like ${yourPetsName}?`);
+</script>
+
+
+</body>
+</html>
