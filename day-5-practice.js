@@ -25,6 +25,8 @@ let longestName = array1[0];
 console.log(`${longestName} has the longest name.`);
 
 // TODO: find the animal with the shortest name.
+let shortestName = array1[2];
+console.log(`${shortestName} has the shortest name.`);
 
 // Difference:
 // strings are immutable. They can't be altered.
@@ -34,6 +36,7 @@ console.log(`${longestName} has the longest name.`);
 // Example of immutable string
 console.log("**** Immutable Strings ****");
 let string2 = "giraffe";
+
 // can't do this (replace g with G)
 string2[0] = "G";
 console.log(string2); // string2 is still "giraffe"
@@ -41,10 +44,14 @@ console.log(string2); // string2 is still "giraffe"
 // Example of mutable array
 console.log("**** Mutable Arrays ****");
 let zooAnimals = ["elephant", "walrus", "kitten", "dairy cow", "girrafe"];
+
 // can do this (replace kitten with lion):
 zooAnimals[2] = "lion";
 console.log(zooAnimals); // now contains lion
+
 // TODO: change "dairy cow" to a more approriate animal for a zoo. Use console.log to show the change in the array.
+zooAnimals[3] = "gaur";
+console.log(zooAnimals);
 
 // Strings are created fully formed.
 // Arrays can be built and changed.
@@ -52,7 +59,11 @@ console.log("**** Array.push() method ****");
 zooAnimals.push("wolf"); // push() adds to the end
 zooAnimals.push("tiger"); // push() adds to the end
 console.log(zooAnimals);
+
 // TODO: add two more animals using the push method
+zooAnimals.push("capybara");
+zooAnimals.push("gibbon");
+console.log(zooAnimals);
 
 // Example: You can take a substring of a string
 console.log("**** String.substring ****");
@@ -68,10 +79,14 @@ console.log(twoAnimals);
 // TODO: take a substring of the word
 console.log("**** TODO: String.substring ****");
 let string5 = "panther";
+let antSub = string5.substring(1,4);
+console.log(antSub);
 
 // TODO: take an slice of an array.
 console.log("**** TODO: String.substring ****");
 let domesticAnimals = ["dog", "cat", "goat", "chicken", "cow"];
+let indoorPets = domesticAnimals.slice(0, 2);
+console.log(indoorPets);
 
 // Practice
 console.log("**** TODO: Practice ****");
@@ -85,9 +100,16 @@ let zooAnimals2 = [
   "tiger",
 ];
 // TODO: in zooAnimals2, replace all the animals with names longer than 6 characters with animals with shorter names. Log it to the console.
+ zooAnimals2[0] = "lynx";
+ zooAnimals2[3] = "jackal";
+ zooAnimals2[4] = "asp";
 
+console.log(zooAnimals2);
 // TODO: Now replace all animals with an "i" in their name to a different animal. Log it to the console.
+zooAnimals2[2]  = "beaver";
+zooAnimals2[6]  = "goat";
 
+console.log(zooAnimals2);
 // Let's try something slightly different.
 
 // Instead of changing the array, we will
@@ -117,10 +139,20 @@ console.log(countries2);
 // TODO: make a new array with only contries with an e in them.
 console.log("**** TODO: countries with an 'e' ****");
 let countries3 = new Array();
+countries3.push(countries1[0]);
+countries3.push(countries1[2]);
+countries3.push(countries1[3]);
+countries3.push(countries1[4]);
+console.log(countries3);
+
 
 // TODO: make a new array with only contries with less than 8 in them.
 console.log("**** TODO: countries less than 8 characters in length ****");
 let countries4 = new Array();
+countries4.push(countries1[1]);
+countries4.push(countries1[2]);
+console.log(countries4);
+
 
 // Example: make a new array containing the length of the animal names.
 console.log("**** Examples: length of animal names ****");
@@ -137,6 +169,15 @@ console.log(animalNameLengths);
 
 // TODO: make a new array containing the length of the country names.
 console.log("**** TODO: length of country names ****");
+let countryNameLength = new Array();
+countryNameLength.push(countries1[0].length);
+countryNameLength.push(countries1[1].length);
+countryNameLength.push(countries1[2].length);
+countryNameLength.push(countries1[3].length);
+countryNameLength.push(countries1[4].length);
+countryNameLength.push(countries1[5].length);
+console.log(countries1);
+console.log(countryNameLength);
 
 // TODO: make a new array containing only the countries with names 8 characters or longer.
 console.log("**** TODO: country names 8 chars or longer ****");
