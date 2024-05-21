@@ -183,9 +183,26 @@ console.log(countryNameLength);
 console.log("**** TODO: country names 8 chars or longer ****");
 let countryNameGreaterThan8 = new Array ();
 
-if (countries1[0].length >= 8) {countryNameGreaterThan8.push(countries1[0])
+if (countries1[0].length >= 8) {
+  countryNameGreaterThan8.push(countries1[0])
 };
-document.write(countryNameGreaterThan8);
+if (countries1[1].length >= 8) {
+  countryNameGreaterThan8.push(countries1[1])
+};
+if (countries1[2].length >= 8) {
+  countryNameGreaterThan8.push(countries1[2])
+};
+if (countries1[3].length >= 8) {
+  countryNameGreaterThan8.push(countries1[3])
+};
+if (countries1[4].length >= 8) {
+  countryNameGreaterThan8.push(countries1[4])
+};
+if (countries1[5].length >= 8) {
+  countryNameGreaterThan8.push(countries1[5])
+};
+
+console.log(countryNameGreaterThan8);
 
 // TODO: find the average length of all the countries' names
 let totalNameLength = 
