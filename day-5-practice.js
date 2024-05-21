@@ -181,9 +181,22 @@ console.log(countryNameLength);
 
 // TODO: make a new array containing only the countries with names 8 characters or longer.
 console.log("**** TODO: country names 8 chars or longer ****");
+let countryNameGreaterThan8 = new Array ();
+
+if (countries1[0].length >= 8) {countryNameGreaterThan8.push(countries1[0])
+};
+document.write(countryNameGreaterThan8);
 
 // TODO: find the average length of all the countries' names
+let totalNameLength = 
+  countryNameLength[0] + 
+  countryNameLength[1] +
+  countryNameLength[2] +
+  countryNameLength[3] +
+  countryNameLength[4] +
+  countryNameLength[5];
 
+console.log(totalNameLength / countries1.length); 
 // TODO: find the average length of only the countries names which are 8 characters or longer
 
 // Challenge...
