@@ -215,15 +215,44 @@ let totalNameLength =
 
 console.log(totalNameLength / countries1.length); 
 // TODO: find the average length of only the countries names which are 8 characters or longer
+let country8GreaterNameLengths = new Array ();
+    country8GreaterNameLengths.push(countryNameGreaterThan8[0].length);
+    country8GreaterNameLengths.push(countryNameGreaterThan8[1].length);
+    country8GreaterNameLengths.push(countryNameGreaterThan8[2].length);
+    country8GreaterNameLengths.push(countryNameGreaterThan8[3].length);
+let country8GreaterNameLengthSum = 
+    country8GreaterNameLengths[0] +
+    country8GreaterNameLengths[1] +
+    country8GreaterNameLengths[2] +
+    country8GreaterNameLengths[3];
+console.log(country8GreaterNameLengthSum / country8GreaterNameLengths.length);
 
 // Challenge...
 
 // TODO: create a new array based on whatever topic you like. Populate the array with at least 7 strings.
-
+let planets = [
+  "mercury",
+  "venus",
+  "earth",
+  "mars",
+  "jupiter",
+  "saturn",
+  "uranus",
+  "neptune",
+];
 // TODO: Create a new array based on the old array but filter the items on any criteria you like. (word length, letter content, or anything else!) Give the new array a name that reflects its contents.
 
 // TODO: Create a new array that contains the lengths of the items in your first array.
-
+let planetsNamesLengths = new Array ();
+  planetsNamesLengths.push(planets[0]);
+  planetsNamesLengths.push(planets[1]);
+  planetsNamesLengths.push(planets[2]);
+  planetsNamesLengths.push(planets[3]);
+  planetsNamesLengths.push(planets[4]);
+  planetsNamesLengths.push(planets[5]);
+  planetsNamesLengths.push(planets[6]);
+  planetsNamesLengths.push(planets[7]);
+  console.log(planetsNamesLengths);
 // TODO: Create a new array that contains the lengths of the items in your *first* array.
 
 // TODO: Create a new array that contains the lengths of the items in your *second* array.
